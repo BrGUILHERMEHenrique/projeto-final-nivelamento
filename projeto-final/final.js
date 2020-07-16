@@ -9,13 +9,13 @@ lista.push(num, num2, num3, num4, num4, num5);
 let menor = Math.min(...lista);
 let maior = Math.max(...lista);
 
-document.write(` o maior número da lista é ${maior} e o menor é ${menor}`);
+document.write(` o maior número da lista é ${maior} e o menor é ${menor} <br>`);
 
 for (let valor of lista){
     if(valor % 2 == 0){
-        document.write('Par' + valor);
+        document.write('Par' + valor + '<br>');
     }else{
-        document.write('impar'+ valor);
+        document.write('impar'+ valor + '<br>');
     }
 }
 
@@ -26,4 +26,4 @@ for (let valor of lista){
         cont++
 }}
 
-document.write(cont - 5 + 'numeros repitidos');
+document.write(cont - 5 + 'numeros repitidos' + '<br>');
